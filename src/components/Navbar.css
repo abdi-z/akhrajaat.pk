@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: red;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+}
+
+.title h1 {
+    margin: 1rem;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+
+}
+.nav-items li {
+    margin: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
