@@ -4,7 +4,6 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Redirect,
   Navigate,
 } from "react-router-dom";
 import Home from "./pages/home/Home";
@@ -12,7 +11,7 @@ import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
 import Navbar from "./components/Navbar";
 import "animate.css";
-import { useNavigate } from "react-router-dom";
+
 import { useAuthContext } from "./hooks/useAuthContext";
 
 function App() {

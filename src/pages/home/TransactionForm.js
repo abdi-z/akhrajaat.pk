@@ -1,54 +1,51 @@
-import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useFirestore } from "../../hooks/useFirestore";
 
-export default function TransactionForm() {
-  const [date, setDate] = useState('');
+export default function TransactionForm({ uid }) {
   const [name, setName] = useState("");
   const [amount, setAmount] = useState("");
+  const { addDocument, response } = useFirestore("transactions");
 
- const handleSubmit = (e) => {
-     e.preventDefault()
-     if(date==''){
-        var todayDate = new Date().toISOString().slice(0, 10);
-        setDate(todayDate)
-     }
-     console.log(date)
- }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addDocument({
+      uid,
+      name,
+      amount,
+    });
+  };
+
+  // reset the form fields
+  useEffect(() => {
+    if (response.success) {
+      setName("");
+      setAmount("");
+    }
+  }, [response.success]);
 
   return (
     <>
-      <h3>Add a transaction:</h3>
+      <h3>Add a Transaction</h3>
       <form onSubmit={handleSubmit}>
         <label>
-          <span>Date</span>
-          <input
-            type="date"
-            placeholder="22-04-2022"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-          />
-        </label>
-        <label>
-          <span>Name</span>
+          <span>Transaction name:</span>
           <input
             type="text"
-            placeholder="Ordered subway with Abdi"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
             required
+            onChange={(e) => setName(e.target.value)}
+            value={name}
           />
         </label>
         <label>
-          <span>Amount(Rs)</span>
+          <span>Amount ($):</span>
           <input
             type="number"
-            placeholder="2500"
-            value={amount}
             required
             onChange={(e) => setAmount(e.target.value)}
+            value={amount}
           />
-          <button>Add transaction</button>
         </label>
+        <button>Add Transaction</button>
       </form>
     </>
   );
