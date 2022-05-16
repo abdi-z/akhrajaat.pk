@@ -17,9 +17,6 @@ export default function Navbar() {
         <h1>Akhrajaat.pk</h1>
       </div>
       <ul className="nav-items">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
 
         {!user && (
           <>
@@ -33,7 +30,11 @@ export default function Navbar() {
         )}
         {user && (
           <>
-            <li>{user.displayName}</li>
+            <li>Logged in as: {user.displayName}
+            </li>
+            <li>
+          <Link to="/">Expenses</Link>
+          </li>
             <li>
               <button className="btn" onClick={logout}>
                 Logout
