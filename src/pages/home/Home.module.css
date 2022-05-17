@@ -70,6 +70,11 @@
   color: #777;
   font-size: 1.4em;
 }
+
+.transactions .date {
+  color: #777;
+  font-size: 1.15em;
+}
 .transactions .amount {
   margin-left: auto;
   margin-right: 40px;
