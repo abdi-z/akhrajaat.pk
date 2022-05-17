@@ -1,6 +1,6 @@
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { useCollection } from "../../hooks/useCollection";
-
+import "animate.css";
 // styles
 import styles from "./Home.module.css";
 
@@ -10,7 +10,11 @@ import TransactionList from "./TransactionList";
 
 export default function Home() {
   const { user } = useAuthContext();
-  const { documents, error } = useCollection("transactions");
+  const { documents, error } = useCollection(
+    "transactions",
+    ["uid", "==", user.uid],
+    ["createdAt", "desc"]
+  );
 
   return (
     <div className={styles.container}>
@@ -19,7 +23,10 @@ export default function Home() {
         {documents && <TransactionList transactions={documents} />}
       </div>
       <div className={styles.sidebar}>
-        <TransactionForm uid={user.uid} />
+        <TransactionForm
+          className="animate__animated animate__rubberBand"
+          uid={user.uid}
+        />
       </div>
     </div>
   );

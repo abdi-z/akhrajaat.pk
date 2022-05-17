@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useLogin } from '../../hooks/useLogin'
-
+import 'animate.css'
 // styles
 import styles from './Login.module.css'
 
@@ -16,7 +16,7 @@ export default function Login() {
 
   return (
     <form onSubmit={handleSubmit} className={styles['login-form']}>
-      <h2>login</h2>
+      <h2 className="animate__animated animate__backInDown" style={{textAlign:"center"}}>Welcome back!</h2>
       <label>
         <span>email:</span>
         <input 

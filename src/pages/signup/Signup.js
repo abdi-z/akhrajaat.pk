@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useSignup } from '../../hooks/useSignup'
-
+import 'animate.css'
 // styles
 import styles from './Signup.module.css'
 
@@ -17,7 +17,9 @@ export default function Signup() {
 
   return (
     <form onSubmit={handleSubmit} className={styles['signup-form']}>
-      <h2>sign up</h2>
+      <h4 style={{textAlign:"center", }}>Akhrajaat.pk is a central repository to keep track of all your expenses anywhere on the go</h4>
+      <br/>
+      <h2  className="animate__animated animate__backInDown" style={{textAlign:"center"}}>Join us !</h2>
       <label>
         <span>email:</span>
         <input 

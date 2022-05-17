@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useFirestore } from '../../hooks/useFirestore'
+import 'animate.css'
 
 export default function TransactionForm({ uid }) {
   const [name, setName] = useState('')
@@ -24,7 +25,7 @@ export default function TransactionForm({ uid }) {
   }, [response.success])
 
   return (
-    <>
+    <div className='animate__animated animate__rubberBand'>
       <h3>Add a Transaction</h3>
       <form onSubmit={handleSubmit}>
         <label>
@@ -37,7 +38,7 @@ export default function TransactionForm({ uid }) {
           />
         </label>
         <label>
-          <span>Amount ($):</span>
+          <span>Amount (Rs.):</span>
           <input
             type="number"
             required
@@ -47,6 +48,6 @@ export default function TransactionForm({ uid }) {
         </label>
         <button>Add Transaction</button>
       </form>
-    </>
+    </div>
   )
 }

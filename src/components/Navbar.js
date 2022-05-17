@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useAuthContext } from "../hooks/useAuthContext";
 import { useLogout } from "../hooks/useLogout";
+import './OnlyNavbar.css'
+import 'animate.css';
 
 // styles
 import styles from "./Navbar.module.css";
@@ -10,9 +12,9 @@ export default function Navbar() {
   const { user } = useAuthContext();
 
   return (
-    <nav className={styles.navbar}>
+    <nav className="navbar animate__animated animate__bounce">
       <ul>
-        <li className={styles.title}>myMoneyApp</li>
+        <li className={styles.title}>Akhrajaat.pk</li>
 
         {!user && (
           <>
@@ -27,9 +29,9 @@ export default function Navbar() {
 
         {user && (
           <>
-            <li>hello, {user.displayName}</li>
+            <li>Salam! {user.displayName}</li>
             <li>
-              <button className="btn" onClick={logout}>
+              <button className="btn animate__animated animate__rubberBand" onClick={logout}>
                 Logout
               </button>
             </li>
