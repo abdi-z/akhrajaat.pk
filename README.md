@@ -3,17 +3,16 @@ Akhrajaat is full stack application where users can store their personal finance
 Firebase utilized for backend services such as firestore database, user authentication as well as deployment. 
 Minimalistic UI with simple yet elegant animations created using React and Animate.css.
 
-<img width="952" alt="ss1" src="https://user-images.githubusercontent.com/92116477/168762506-b5effd37-deb2-47fc-b9c1-e8d66b8f681a.png">
+<img width="960" alt="signup" src="https://user-images.githubusercontent.com/92116477/169133953-c10a900a-d4fa-4a69-9cd2-1c8c4ef9f678.png">
 
 Live url available https://akhrajaat-de70f.web.app/signup 
 
-<img width="952" alt="ss2" src="https://user-images.githubusercontent.com/92116477/168762517-523c9a51-f87f-4933-804a-5aa15747a22b.png">
+<img width="958" alt="login" src="https://user-images.githubusercontent.com/92116477/169133896-835163ee-29ed-48be-acb5-da86b3890145.png">
 
-<img width="950" alt="ss3" src="https://user-images.githubusercontent.com/92116477/168762538-abe6a407-aa6c-45bf-97cc-2bb55fb3fc25.png">
+Now you can start saving with convenience as well!
 
-<img width="958" alt="ss4" src="https://user-images.githubusercontent.com/92116477/168762552-34bf322a-0fd1-451c-9b39-50fa87017150.png">
+<img width="959" alt="pages" src="https://user-images.githubusercontent.com/92116477/169133921-4c7ec0d0-73c4-464a-9702-c3c9a7e76688.png">
 
-<img width="959" alt="ss5" src="https://user-images.githubusercontent.com/92116477/168762568-3bc1fdfb-7511-47e3-9a39-a8793cfcca35.png">
 
 
 
