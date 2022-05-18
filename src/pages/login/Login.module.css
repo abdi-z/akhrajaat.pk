@@ -1,3 +1,9 @@
+body {
+  background-image: url("dolla2.jpg");
+}
+.login-form button {
+  margin-left: 3rem;
+}
 .login-form {
   max-width: 360px;
   margin: 60px auto;
@@ -12,8 +18,26 @@
   margin-bottom: 6px;
 }
 .login-form input {
+  border-radius: 15px;
+  border-style: none;
   padding: 8px 6px;
   font-size: 1em;
   color: #777;
+  width: 100%;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: #effaf0;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+button:hover:before {
   width: 100%;
 }
