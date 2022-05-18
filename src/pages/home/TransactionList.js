@@ -8,6 +8,7 @@ export default function TransactionList({ transactions }) {
 
   return (
     <ul className={styles.transactions}>
+      <h3>Transactions:</h3>
       {transactions.map((transaction) => (
         <li key={transaction.id}>
           <p className={styles.name}>{transaction.name}</p>
