@@ -1,3 +1,23 @@
+Akhrajaat is full stack application where users can store their personal finances to track their expenditures in real time and access them anywhere using one account.
+
+Firebase utilized for backend services such as firestore database, user authentication as well as deployment. 
+Minimalistic UI with simple yet elegant animations created using React and Animate.css.
+
+<img width="952" alt="ss1" src="https://user-images.githubusercontent.com/92116477/168762506-b5effd37-deb2-47fc-b9c1-e8d66b8f681a.png">
+
+Live url available https://akhrajaat-de70f.web.app/signup 
+
+<img width="952" alt="ss2" src="https://user-images.githubusercontent.com/92116477/168762517-523c9a51-f87f-4933-804a-5aa15747a22b.png">
+
+<img width="950" alt="ss3" src="https://user-images.githubusercontent.com/92116477/168762538-abe6a407-aa6c-45bf-97cc-2bb55fb3fc25.png">
+
+<img width="958" alt="ss4" src="https://user-images.githubusercontent.com/92116477/168762552-34bf322a-0fd1-451c-9b39-50fa87017150.png">
+
+<img width="959" alt="ss5" src="https://user-images.githubusercontent.com/92116477/168762568-3bc1fdfb-7511-47e3-9a39-a8793cfcca35.png">
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +88,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
